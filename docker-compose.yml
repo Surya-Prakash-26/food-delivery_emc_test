@@ -9,6 +9,7 @@ services:
 
   backend:
     build: ./backend
+    image: emciptdevops/food-delivery-backend:latest
     container_name: backend
     depends_on:
       - mongodb
@@ -18,6 +19,7 @@ services:
 
   frontend:
     build: ./frontend
+    image: emciptdevops/food-delivery-frontend:latest
     container_name: frontend
     depends_on:
       - backend
@@ -25,6 +27,7 @@ services:
 
   admin:
     build: ./admin
+    image: emciptdevops/food-delivery-admin:latest
     container_name: admin
     depends_on:
       - backend
