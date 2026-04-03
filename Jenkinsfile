@@ -69,7 +69,7 @@ pipeline {
                           -Dsonar.projectKey=${SONAR_PROJECT_KEY} \
                           -Dsonar.sources=frontend/src,backend,admin/src \
                           -Dsonar.host.url=${SONAR_HOST_URL} \
-                          -Dsonar.login=${env.SONAR_AUTH_TOKEN}
+                          -Dsonar.token=${env.SONAR_AUTH_TOKEN}
                     """
                 }
             }
