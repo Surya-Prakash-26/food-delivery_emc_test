@@ -122,7 +122,7 @@ pipeline {
                 to:      'suryalogu616@gmail.com',        
                 subject: "✅ BUILD SUCCESS — ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body:    """\
-Hi,
+Hi Team,
 
 The Jenkins pipeline for ${env.JOB_NAME} completed successfully.
 
@@ -141,7 +141,7 @@ Jenkins
                 to:      'suryalogu616@gmail.com',        
                 subject: "❌ BUILD FAILED — ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body:    """\
-Hi,
+Hi Team,
 
 The Jenkins pipeline for ${env.JOB_NAME} has FAILED.
 
